@@ -62,7 +62,8 @@ body{
 
 #screenText{
     align-self: last baseline;
-    color: white;
+    color: rgb(189, 183, 183);
+    margin-right: 10px;
 }
 
 #result{
@@ -70,7 +71,9 @@ body{
     align-self: baseline;
     display: flex;
     position: absolute;
-    color: lightgray
+    color: lightgray;
+    font-weight: 900;
+    margin-right: 10px;
 }
 
 div{

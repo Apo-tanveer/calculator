@@ -6,7 +6,7 @@ let operatorsList = [""];
 
 btn.forEach(button=>{
     button.addEventListener("click", (e)=>{
-        let value = e.target.textContent;      
+        let value = e.target.textContent;     
 // _________________________________NUMBERS__________________________________________________________________________________________________________________________________        
         if(e.target.className ==="numbers"){
 
@@ -71,6 +71,9 @@ btn.forEach(button=>{
 
         if(result.textContent.length>12){
             result.textContent = (Number(result.textContent).toFixed(16))
+        }
+        if((result.textContent ==="0")&&(screenText.textContent==="")){
+            result.textContent = "";
         }
     } )
 })
